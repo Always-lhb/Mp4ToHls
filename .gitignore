@@ -1,0 +1,68 @@
+/node_modules/
+node_modules/
+*.iml
+target
+.idea
+*.log
+*.pid
+*.out
+*.DS_Store
+*.jar
+
+Makefile
+.classpath
+/sdklog/
+.project
+.settings
+/logs
+*.tmp
+*.swp
+*.classpath
+install-*
+*MF
+*.pyc
+*.ipr
+*.iws
+*.idea
+*/lib/*
+*.class
+.DS_Store
+nohup.out
+local-run-temp-log4j2.yaml
+**/worker/tool/*.java
+
+# compiled output
+*/dist
+*/tmp
+*/out-tsc
+*/packager
+
+# dependencies
+*/node_modules
+
+# IDEs and editors
+/.idea
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+
+# IDE - VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# misc
+/.sass-cache
+/connect.lock
+/coverage
+/libpeerconnection.log
+npm-debug.log
+yarn-error.log
+testem.log
+/typings
+
+# System Files
+Thumbs.db
