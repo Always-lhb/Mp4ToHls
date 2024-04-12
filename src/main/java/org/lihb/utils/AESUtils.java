@@ -1,4 +1,4 @@
-package utils;
+package org.lihb.utils;
 
 import javax.crypto.KeyGenerator;
 import java.security.NoSuchAlgorithmException;

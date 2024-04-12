@@ -1,0 +1,25 @@
+# Spring configuration
+spring.main.allow-circular-references: true
+spring.application.admin.enabled: true
+spring.profiles.active: dev
+
+# Server configuration
+server:
+  port: 8900
+  tomcat:
+    max-threads: 128
+    max-connections: 1024
+    remote-ip-header: x-forwarded-for
+
+server.servlet.encoding.charset: utf-8
+server.servlet.encoding.force: true
+server.servlet.encoding.enabled: true
+
+# multipart 配置
+spring.servlet.multipart:
+  enabled: true
+  file-size-threshold: 1MB
+  location: /tmp
+  max-file-size: 50MB
+  max-request-size: 50MB
+  resolve-lazily: false
