@@ -50,13 +50,14 @@ public class HlsDownloadService {
             lines.add(line);
         }
 
-        // 临时文件，存储动态修改后的m3u8文件
+        // 创建临时文件，存储动态修改后的m3u8文件
         String tmpFilepath = HlsUtils.buildTmpFilepath();
         File tmpFile = new File(tmpFilepath);
         FileUtils.writeLines(tmpFile, lines);
 
         byte[] result = FileUtils.readFileToByteArray(tmpFile);
 
+        // 删除临时文件
         FileUtils.deleteQuietly(tmpFile);
         return result;
     }

@@ -49,7 +49,7 @@ public class AdminController {
     @ResponseBody
     public String convert(@RequestParam(value = "mp4FilePath") String mp4FilePath) {
         hlsConvertService.convert(mp4FilePath);
-        return "ok";
+        return "";
     }
 
     /**

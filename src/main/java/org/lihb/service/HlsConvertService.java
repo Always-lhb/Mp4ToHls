@@ -144,6 +144,12 @@ public class HlsConvertService {
         return code;
     }
 
+    /**
+     * 拼接ffmpeg命令
+     *
+     * @param mp4FilePath 源mp4文件路径
+     * @return the generated ffmpeg cmd
+     */
     private String buildCmd(String mp4FilePath) {
         StringBuilder stringBuilder = new StringBuilder(" -y");
         stringBuilder.append(" -i ").append(mp4FilePath)
